@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      
       rel="stylesheet"
+      
     />
 
     <title>Tela de loguin</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -16,43 +19,27 @@
       <form action="#">
         <h1>Loguin Dev</h1>
 
-        <div>
+        <div class="input-box">
           <label for="usuario">Loguin</label>
-          <input
-            type="text"
-            id="usuario"
-            name="usuario"
-            placeholder="Digite seu loguin"
-          />
+          <input type="text" id="usuario" name="usuario" placeholder="Digite seu loguin"/>
           <i class="bx bxs-user"></i>
         </div>
 
-        <div>
+        <div  class="input-box">
           <label for="senha">Senha</label>
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Digite seu loguin"
-          />
+          <input type="password" id="senha" name="senha" placeholder="Digite seu loguin"/>
           <i class="bx bxs-lock-alt"></i>
         </div>
 
-        <div>
-          <label>
-            <input type="checkbox" />
-            Lembra minha senha
-          </label>
-
-          <a href="#">Esqueci minha senha</a>
+        <div class="button">
+          <button  type="submit">Loguin</button>
         </div>
+      <div class="senha">
+        <p>Esquecue a senha? <a href="#">Clique aqui</a></p>
+      </div>
 
-        <button type="submit">Loguin</button>
       </form>
 
-      <div>
-        <p>Não tem conta ? <a href="#">Cadrastrese</a></p>
-      </div>
     </main>
   </body>
 </html>
